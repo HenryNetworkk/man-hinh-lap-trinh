@@ -636,76 +636,51 @@ Cáp &amp; phụ kiện điện thoại </a>
  
  
 <div class="product-cta mb-0 mt-2 pt-2 border-neutral-50 border-dashed border-t">
- 
- <div class="hidden btn--soldout font-semibold mt-2 btn bg-neutral-50 w-full sf-hidden" disabled style=pointer-events:none>
- HẾT HÀNG
- </div>
- 
- <form class=mb-3 enctype=multipart/form-data id=add-to-cart-form action=/cart/add method=post>
- 
- <div class="flex gap-2 items-center">
- 
- <quantity-input>
- <div class="custom-number-input product-quantity">
- <div class="flex flex-row h-10 border border-neutral-50 relative bg-background rounded-sm overflow-hidden h-[3.8rem] w-[13rem]">
- <button type=button name=minus class="h-full w-20 cursor-pointer outline-non p-2 disabled">
- <i class="m-auto icon icon-minus"></i>
- </button>
- <input type=number class="focus:outline-none form-quantity w-full focus:ring-transparent text-base font-semibold text-md md:text-basecursor-default flex items-center outline-none bg-transparent border-none text-center" name=quantity value=1 min=1>
- <button type=button name=plus class="h-full w-20 rounded-r cursor-pointer p-2">
- <i class="m-auto icon icon-plus"></i>
- </button>
- </div>
- </div>
- </quantity-input>
- 
- <div class=inventory-status>
- 
- <span class="font-semibold text-warning flex items-center gap-1">
- Sắp hết hàng
- </span>
- 
-</div> </div>
- <div class=mt-2>
- 
- <button name=addtocart class="font-semibold btn bg-[var(--color-addtocart-bg)] text-[var(--color-addtocart)] btn-add-to-cart w-full">
- <span> Thêm vào giỏ</span>
- <span class="loading-icon gap-1 hidden items-center justify-center sf-hidden">
- 
- 
- 
- 
- 
- 
- 
-</span>
- </button>
- 
- </div>
- <div class="flex gap-2">
- 
- <a href=https://punstore.vn/man-hinh-toushuo-al278ufa-27inch-4k-180hz-1k-360hz-nanoips-hdr600 title=5000000 class="button hidden installment-button flex items-center justify-center font-semibold mt-2 btn bg-transparent text-[var(--color-addtocart-bg)] border border-neutral-50 hover:bg-neutral-50 hover:brightness-100 btn-add-to-cart w-full sf-hidden">
- Mua trả góp
- </a>
- 
- 
- <button name=buynow class="font-semibold mt-2 btn bg-[var(--color-addtocart-color)] text-[var(--color-addtocart-bg)] border border-[var(--color-addtocart-bg)] hover:bg-[var(--color-addtocart-bg)] hover:text-[var(--color-addtocart)] btn-buynow w-full">
- <span> Mua ngay </span>
- <span class="loading-icon gap-1 hidden items-center justify-center sf-hidden">
- 
- 
- 
- 
- 
- 
- 
-</span>
- </button>
- 
- 
- </div>
- 
- </form>
+  <div class="hidden btn--soldout font-semibold mt-2 btn bg-neutral-50 w-full sf-hidden" disabled style="pointer-events:none">
+    HẾT HÀNG
+  </div>
+  <form class="mb-3" enctype="multipart/form-data" id="add-to-cart-form" action="/cart/add" method="post">
+    <div class="flex gap-2 items-center">
+      <quantity-input>
+        <div class="custom-number-input product-quantity">
+          <div class="flex flex-row h-10 border border-neutral-50 relative bg-background rounded-sm overflow-hidden h-[3.8rem] w-[13rem]">
+            <button type="button" name="minus" class="h-full w-20 cursor-pointer outline-non p-2 disabled">
+              <i class="m-auto icon icon-minus"></i>
+            </button>
+            <input type="number" class="focus:outline-none form-quantity w-full focus:ring-transparent text-base font-semibold text-md md:text-base cursor-default flex items-center outline-none bg-transparent border-none text-center" name="quantity" value="1" min="1">
+            <button type="button" name="plus" class="h-full w-20 rounded-r cursor-pointer p-2">
+              <i class="m-auto icon icon-plus"></i>
+            </button>
+          </div>
+        </div>
+      </quantity-input>
+      <div class="inventory-status">
+        <span class="font-semibold text-warning flex items-center gap-1">
+          Sắp hết hàng
+        </span>
+      </div>
+    </div>
+    <div class="mt-2">
+      <button name="addtocart" class="font-semibold btn bg-[var(--color-addtocart-bg)] text-[var(--color-addtocart)] btn-add-to-cart w-full">
+        <span>Thêm vào giỏ</span>
+        <span class="loading-icon gap-1 hidden items-center justify-center sf-hidden"></span>
+      </button>
+    </div>
+    <div class="flex gap-2">
+      <a href="https://punstore.vn/man-hinh-toushuo-al278ufa-27inch-4k-180hz-1k-360hz-nanoips-hdr600" title="5000000" class="button hidden installment-button flex items-center justify-center font-semibold mt-2 btn bg-transparent text-[var(--color-addtocart-bg)] border border-neutral-50 hover:bg-neutral-50 hover:brightness-100 btn-add-to-cart w-full sf-hidden">
+        Mua trả góp
+      </a>
+      <!-- ✅ Đã thêm onclick redirect sang thanhtoan.html -->
+      <button
+        name="buynow"
+        type="button"
+        onclick="window.location.href='thanhtoan.html'"
+        class="font-semibold mt-2 btn bg-[var(--color-addtocart-color)] text-[var(--color-addtocart-bg)] border border-[var(--color-addtocart-bg)] hover:bg-[var(--color-addtocart-bg)] hover:text-[var(--color-addtocart)] btn-buynow w-full">
+        <span>Mua ngay</span>
+        <span class="loading-icon gap-1 hidden items-center justify-center sf-hidden"></span>
+      </button>
+    </div>
+  </form>
 </div>
 <div class=sapo-buyxgety-module-detail-v2><div class=module-buyxgety>
  <div class=title-buyxgety>
